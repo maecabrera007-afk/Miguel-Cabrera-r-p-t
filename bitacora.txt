@@ -1,1 +1,61 @@
-1) file:///home/cohorte8/Documents/Grupo_Tarde/Rueda_libre/paginas/index.html | metodo : Get | protocolo:  | host: | puerto: | ruta:/home/cohorte8/Documents/Grupo_Tarde/Rueda_libre/paginas/index.html | cod_status: 200 | metodo_peticion: | 
+protocolo:  | host: | puerto: | ruta:/home/cohorte8/Documents/Grupo_Tarde/Rueda_libre/paginas/index.html | cod_status: 200 | metodo_peticion: | 
+
+
+
+# Bitácora de Desarrollo - Proyecto Rueda Libre
+
+## 1. Registro de Petición HTTP (Live Server)
+*   **URL completa:** http://127.0.0.1:5500/paginas/index.html
+*   **Protocolo:** http://
+*   **Host:** 127.0.0.1 
+*   **Puerto:** 5500 
+*   **Ruta:** /paginas/index.html
+*   **Método de la petición:** GET
+*   **Código de estado:** 200 OK
+
+---
+
+## 2. Prueba de Ruta Inexistente
+*   **Ruta probada:** `/lista_de_precios.html`
+*   **Código de estado del servidor:** 404 Not Found
+*   **Significado:** Significa que el servidor web está funcionando correctamente y recibió la solicitud, pero no pudo encontrar el archivo o recurso específico en esa dirección porque no existe o fue movido.
+
+---
+
+## 3. Roles de las Tecnologías en Rueda Libre
+
+### HTML 
+*   **Rol:** Define el esqueleto, la organización jerárquica y el contenido del sitio web.
+*   **Ejemplo :** Creación del menú de navegación con etiquetas <nav> y los enlaces de las secciones, o la estructura de la ficha técnica de una bicicleta usando <ul> y <li>.
+
+### CSS 
+*   **Rol:** Aplica el diseño visual, los estilos, colores, tipografías y la adaptabilidad a pantallas móviles .
+*   **Ejemplo concreto:** Definir que el fondo del sitio sea negro, que los botones de compra tengan esquinas redondeadas y cambien a color verde brillante cuando el usuario pasa el cursor por encima.
+
+### JavaScript 
+*   **Rol:** Aporta comportamiento dinámico, lógica del lado del cliente y maneja las interacciones del usuario en tiempo real.
+*   **Ejemplo concreto:** Programar un cotizador dinámico donde el usuario elige el tipo de bicicleta y los días de renta, calculando el precio total instantáneamente en pantalla sin recargar la página.
+
+---
+
+## 4. Control de Versiones 
+
+Para realizar tu primer commit y subirlo a GitHub, ejecuta los siguientes comandos en tu terminal:
+
+```bash
+# 1. Inicializar el repositorio 
+git init
+
+# 2. Agregar los archivos 
+git add .
+
+# 3. Hacer el primer commit con un mensaje descriptivo
+git commit -m "feat: estructura inicial del proyecto, bitácora técnica y definición de roles"
+
+# 4. Vincular tu repositorio local con tu repositorio remoto en GitHub
+# git remote add origin https://github.com
+
+# 5. Cambiar a la rama principal (main) y subir los cambios
+git branch -M main
+git push -u origin main
+```

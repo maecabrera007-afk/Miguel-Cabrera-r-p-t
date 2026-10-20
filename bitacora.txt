@@ -50,7 +50,7 @@ git init
 git add .
 
 # 3. Hacer el primer commit con un mensaje descriptivo
-git commit -m "feat: estructura inicial del proyecto, bitácora técnica y definición de roles"
+git commit -m "feat: Mensaje xd "
 
 # 4. Vincular tu repositorio local con tu repositorio remoto en GitHub
 # git remote add origin https://github.com

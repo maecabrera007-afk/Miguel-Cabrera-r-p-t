@@ -4,7 +4,7 @@ protocolo:  | host: | puerto: | ruta:/home/cohorte8/Documents/Grupo_Tarde/Rueda_
 
 # Bitácora de Desarrollo - Proyecto Rueda Libre
 
-## 1. Registro de Petición HTTP (Live Server)
+## 1. Registro de Petición HTTP 
 *   **URL completa:** http://127.0.0.1:5500/paginas/index.html
 *   **Protocolo:** http://
 *   **Host:** 127.0.0.1 

@@ -1,0 +1,1 @@
+1) file:///home/cohorte8/Documents/Grupo_Tarde/Rueda_libre/paginas/index.html | metodo : Get | protocolo:  | host: | puerto: | ruta:/home/cohorte8/Documents/Grupo_Tarde/Rueda_libre/paginas/index.html | cod_status: 200 | metodo_peticion: | 

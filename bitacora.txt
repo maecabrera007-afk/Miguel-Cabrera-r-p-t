@@ -42,7 +42,6 @@ protocolo:  | host: | puerto: | ruta:/home/cohorte8/Documents/Grupo_Tarde/Rueda_
 
 Para realizar tu primer commit y subirlo a GitHub, ejecuta los siguientes comandos en tu terminal:
 
-```bash
 # 1. Inicializar el repositorio 
 git init
 
@@ -58,4 +57,30 @@ git commit -m "feat: Mensaje xd "
 # 5. Cambiar a la rama principal (main) y subir los cambios
 git branch -M main
 git push -u origin main
-```
+
+
+## 5. Rutas que se usaron dentro el ultimo mini reto
+
+
+Las tres páginas están en la misma carpeta, por eso la ruta es solo el nombre del archivo.
+
+| # | Archivo de origen | Destino | Ruta escrita |
+|---|---|---|---|
+| 1 | index.html | index.html | index.html |
+| 2 | index.html | tarifas.html | tarifas.html |
+| 3 | index.html | reservas.html | reservas.html |
+| 4 | tarifas.html | index.html | index.html |
+| 5 | tarifas.html | tarifas.html | tarifas.html |
+| 6 | tarifas.html | reservas.html | reservas.html |
+| 7 | reservas.html | index.html | index.html |
+| 8 | reservas.html | tarifas.html | tarifas.html |
+| 9 | reservas.html | reservas.html | reservas.html |
+
+#Rutas de las imagenes 
+
+
+| Archivo de origen | Recurso | Ruta escrita | Ubicación real |
+|---|---|---|---|
+| index.html, tarifas.html, reservas.html | Favicon | ../img/favicon.png | proyecto/img/favicon.png |
+| index.html, tarifas.html, reservas.html | Portada | ../img/portada.jpeg | proyecto/img/portada.jpeg |
+

@@ -173,3 +173,27 @@ Medición del ancho de una tarjeta :
 | content-box (antes) | 656 px | 32 px | 4 px | 692 px |
 | border-box (después) | 620 px | 32 px | 4 px | 656 px |
 
+
+
+## Cierre de la semana: Rueda Libre v1.0
+
+URL del sitio: https://maecabrera007-afk.github.io/Rueda_libre_Miguel_Turing/
+
+Qué construí en cada MiniReto:
+- MiniReto 5: pasé las tres páginas a HTML semántico (encabezado, menú, contenido principal, secciones, artículos y pie).
+- MiniReto 6: hice el formulario de reserva con grupos, etiquetas y los distintos tipos de campo.
+- MiniReto 7: agregué la validación con las reglas del cliente y probé cada una con datos incorrectos.
+- MiniReto 8: revisé la accesibilidad, comprobé el contraste de los colores y publiqué el sitio en GitHub Pages.
+- MiniReto 9: creé la hoja de estilos con variables, las tipografías y los colores de marca.
+- MiniReto 10: estilicé el menú, los botones y los campos con sus estados al pasar el mouse y al enfocar, y resolví el conflicto de especificidad.
+- MiniReto 11: apliqué el modelo de caja a las tarjetas, las tablas y el formulario, y centré el contenido.
+- MiniReto 12: agregué la etiqueta "Nuevo", el enlace de WhatsApp siempre visible y ordené la hoja de estilos.
+
+Qué mejoraría:
+- Agregar imágenes, ruta y precios al servicio de bicicletas eléctricas.
+- Poner el número real de WhatsApp.
+- Revisar los textos con el cliente errores de ortografía y datos de contacto de ejemplo.
+- Hacer que el sitio se vea bien en pantallas pequeñas.
+- Conectar el formulario a un servidor para que las reservas se reciban de verdad.
+
+Comprobación final: sin declaraciones tachadas inesperadas, sin errores 404 y con recorrido completo con teclado: 

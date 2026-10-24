@@ -84,3 +84,13 @@ Las tres páginas están en la misma carpeta, por eso la ruta es solo el nombre 
 | index.html, tarifas.html, reservas.html | Favicon | ../img/favicon.png | proyecto/img/favicon.png |
 | index.html, tarifas.html, reservas.html | Portada | ../img/portada.jpeg | proyecto/img/portada.jpeg |
 
+
+#Justificacion formulario
+
+Tipo de bicicleta con radio, no con select. Solo hay tres opciones y solo se puede elegir una. Con radio las tres se ven a la vez y se elige con un clic. Los tres comparten name="tipo_bicicleta", por eso el navegador solo deja marcar uno.
+Celular con type="tel". 
+
+En el celular abre el teclado numérico y no valida el formato como correo o número. Lo mantuve como tel y no como number, porque un celular no es una cantidad: no se suma ni lleva flechas de subir y bajar.
+
+Aceptar el contrato con checkbox. Es una decisión de sí o no, y con la casilla marcada se envía acepta_terminos=si. Si no se marca, no se envía nada y required impide enviar el formulario.
+

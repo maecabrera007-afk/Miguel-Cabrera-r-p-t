@@ -38,11 +38,104 @@
                     <dd>Cerrado</dd>
             </dl>
         </aside>
-    </main>
+
+        <form action="#" method="post">
+
+        <fieldset>
+            <legend>Tus datos</legend>
+
+            <p>
+                <label for="nombre"> Nombre completo </label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </p>
+
+            <p>
+                <label for="correo">Correo electrónico </label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </p>
+            
+            <p>
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric" maxlength="10" required>
+            </p>
  
-    <footer>
+            <p>
+                <label for="documento">Número de documento</label>
+                <input type="text" id="documento" name="documento" inputmode="numeric" required>
+            </p>
+
+
+        </fieldset>
+
+        <fieldset>
+                    
+            <legend>Tu alquiler</legend>
+ 
+                <fieldset>
+                        
+                    <legend>Tipo de bicicleta</legend>
+ 
+                        <p>
+                            <input type="radio" id="tipo-urbana" name="tipo_bicicleta" value="Urbana" required>
+                            <label for="tipo-urbana">Urbana</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" id="tipo-montana" name="tipo_bicicleta" value="Montaña">
+                            <label for="tipo-montana">Montaña</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" id="tipo-pista" name="tipo_bicicleta" value="Pista">
+                            <label for="tipo-pista">Pista</label>
+                        </p>
+                
+                </fieldset>
+
+                        <p>
+                            <label for="duracion">Duración del alquiler</label>
+                                <select id="duracion" name="duracion" required>
+                                    <option value="">Seleccione una duración</option>
+                                    <option value="1_hora">1 hora</option>
+                                    <option value="medio_dia">Medio día (4 h)</option>
+                                    <option value="dia_completo">Día completo</option>
+                                </select>
+                        </p>
+ 
+                        <p>
+                            <label for="fecha">Fecha del alquiler</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </p>
+ 
+                        <p>
+                            <label for="cantidad">Cantidad de bicicletas</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                        </p>
+                
+        </fieldset>
+ 
+                <fieldset>
+                    <legend>Confirmación</legend>
+ 
+                    <p>
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+                    </p>
+ 
+                    <p>
+                        <input type="checkbox" id="acepta-terminos" name="acepta_terminos" value="si" required>
+                        <label for="acepta-terminos">Acepto las condiciones del contrato de alquiler</label>
+                    </p>
+                </fieldset>
+ 
+                <button type="submit"> Enviar reserva</button>
+
+        </form>
+    </main>
+
+    <footer> 
         <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
         <a href="mailto:info@ruedalibre.com">Contacto</a>
     </footer>
-</body>
-</html>
+</body>26
+</html>26

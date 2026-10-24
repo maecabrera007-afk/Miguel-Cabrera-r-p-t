@@ -1,6 +1,8 @@
 
-:root {
 
+
+:root {
+    /* Colores de marca (más blanco, usado en el mapa de uso de color) */
     --verde-ruta: #1E7A4F;
     --naranja-pedal: #F39A2B;
     --azul-noche: #14213D;
@@ -8,16 +10,13 @@
     --gris-asfalto: #5B6470;
     --blanco: #FFFFFF;
 
-   
     --fuente-titulos: "Montserrat", "Arial Black", Arial, sans-serif;
     --fuente-texto: "Open Sans", Arial, Helvetica, sans-serif;
-
 
     --espacio-s: 0.5rem;
     --espacio-m: 1rem;
     --espacio-l: 2rem;
 }
-
 
 body {
     margin: 0;
@@ -41,7 +40,6 @@ img {
     height: auto;
 }
 
-
 header {
     padding: var(--espacio-m) var(--espacio-l);
     color: var(--blanco);
@@ -59,7 +57,6 @@ small {
     color: var(--gris-asfalto);
 }
 
-/* ===== Enlaces y botones ===== */
 a {
     color: var(--verde-ruta);
     text-decoration: underline;
@@ -69,12 +66,72 @@ header a {
     color: var(--blanco);
 }
 
-button {
+a:hover,
+a:focus {
+    color: var(--azul-noche);
+    text-decoration-thickness: 0.2rem;
+}
+
+header a:hover,
+header a:focus {
+    color: var(--naranja-pedal);
+}
+
+nav {
+    background-color: var(--crema);
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-s);
+    margin: 0;
+    padding: var(--espacio-s);
+    list-style: none;
+}
+
+#menu a {
+    display: inline-block;
+    padding: var(--espacio-s) var(--espacio-m);
+    color: var(--gris-asfalto);
+}
+
+#menu a.activo {
+    color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+#menu a:hover,
+#menu a:focus {
+    color: var(--blanco);
+    background-color: var(--verde-ruta);
+}
+
+#menu a:focus-visible {
+    outline-color: var(--azul-noche);
+}
+
+button,
+.boton-cta {
     padding: var(--espacio-s) var(--espacio-m);
     color: var(--blanco);
     background-color: var(--verde-ruta);
     border: none;
     cursor: pointer;
+}
+
+.boton-cta {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+button:hover,
+button:focus,
+.boton-cta:hover,
+.boton-cta:focus {
+    color: var(--blanco);
+    background-color: var(--azul-noche);
 }
 
 input,
@@ -84,7 +141,20 @@ button {
     font: inherit;
 }
 
-/* ===== Foco visible con teclado ===== */
+input:hover,
+select:hover,
+textarea:hover {
+    outline: 0.125rem solid var(--gris-asfalto);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 0.25rem solid var(--azul-noche);
+    outline-offset: 0.125rem;
+    background-color: var(--blanco);
+}
+
 :focus-visible {
     outline: 0.1875rem solid var(--azul-noche);
     outline-offset: 0.125rem;

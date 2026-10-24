@@ -1,8 +1,5 @@
 
-
-
 :root {
-    /* Colores de marca (más blanco, usado en el mapa de uso de color) */
     --verde-ruta: #1E7A4F;
     --naranja-pedal: #F39A2B;
     --azul-noche: #14213D;
@@ -16,6 +13,12 @@
     --espacio-s: 0.5rem;
     --espacio-m: 1rem;
     --espacio-l: 2rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -40,6 +43,7 @@ img {
     height: auto;
 }
 
+
 header {
     padding: var(--espacio-m) var(--espacio-l);
     color: var(--blanco);
@@ -47,15 +51,28 @@ header {
     border-bottom: var(--espacio-s) solid var(--naranja-pedal);
 }
 
+header,
+main,
+footer {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main,
 footer {
     padding: var(--espacio-m) var(--espacio-l);
+}
+
+.portada {
+    min-height: 50vh;
 }
 
 footer,
 small {
     color: var(--gris-asfalto);
 }
+
 
 a {
     color: var(--verde-ruta);
@@ -77,17 +94,20 @@ header a:focus {
     color: var(--naranja-pedal);
 }
 
+
 nav {
     background-color: var(--crema);
 }
 
 #menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--espacio-s);
     margin: 0;
     padding: var(--espacio-s);
     list-style: none;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: var(--espacio-s);
 }
 
 #menu a {
@@ -96,10 +116,12 @@ nav {
     color: var(--gris-asfalto);
 }
 
+
 #menu a.activo {
     color: var(--verde-ruta);
     font-weight: 600;
 }
+
 
 #menu a:hover,
 #menu a:focus {
@@ -141,12 +163,14 @@ button {
     font: inherit;
 }
 
+
 input:hover,
 select:hover,
 textarea:hover {
     outline: 0.125rem solid var(--gris-asfalto);
 }
 
+/* Va después de :hover para que el foco gane si ambos se cumplen */
 input:focus,
 select:focus,
 textarea:focus {
@@ -155,6 +179,104 @@ textarea:focus {
     background-color: var(--blanco);
 }
 
+
+.tarjeta {
+    width: 100%;
+    margin-bottom: var(--espacio-l);
+    padding: var(--espacio-m);
+    background-color: var(--blanco);
+    border: 2px solid var(--gris-asfalto);
+    border-radius: var(--espacio-s);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: var(--espacio-s);
+}
+
+
+table {
+    width: 100%;
+    margin-bottom: var(--espacio-m);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: var(--espacio-s);
+    font-weight: 600;
+    text-align: left;
+}
+
+th,
+td {
+    padding: var(--espacio-s) var(--espacio-m);
+    border: 1px solid var(--gris-asfalto);
+    text-align: left;
+}
+
+th {
+    color: var(--blanco);
+    background-color: var(--azul-noche);
+}
+
+/* ===== Formulario ===== */
+fieldset {
+    margin-bottom: var(--espacio-l);
+    padding: var(--espacio-m);
+    border: 1px solid var(--gris-asfalto);
+}
+
+legend {
+    padding: 0 var(--espacio-s);
+    font-weight: 600;
+}
+
+fieldset p {
+    margin: 0 0 var(--espacio-m);
+}
+
+
+label {
+    display: block;
+    margin-bottom: var(--espacio-s);
+}
+
+
+input + label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: var(--espacio-s);
+    border: 1px solid var(--gris-asfalto);
+}
+
+fieldset small {
+    display: block;
+    margin-top: var(--espacio-s);
+}
+
+form button {
+    padding: var(--espacio-m) var(--espacio-l);
+}
+
+/* ===== Foco visible con teclado ===== */
 :focus-visible {
     outline: 0.1875rem solid var(--azul-noche);
     outline-offset: 0.125rem;

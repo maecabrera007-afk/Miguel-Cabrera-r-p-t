@@ -163,3 +163,13 @@ Estados:
 - Todos los colores de texto cumplen 4.5:1 de contraste.
 
 Con Tab: en las tres páginas siempre se ve dónde está el foco.
+
+## Modelo de caja
+
+Medición del ancho de una tarjeta :
+
+| box-sizing | Contenido | Relleno (izq. + der.) | Borde (izq. + der.) | Ancho total |
+|---|---|---|---|---|
+| content-box (antes) | 656 px | 32 px | 4 px | 692 px |
+| border-box (después) | 620 px | 32 px | 4 px | 656 px |
+

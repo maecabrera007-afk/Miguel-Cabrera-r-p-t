@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifas</title>
-    <link rel="icon" type="image/png" href=".proyecto/img/favicon.png">
+    <title>Tarifas | Rueda Libre</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 <body>
+    <a href="#contenido">Saltar al contenido principal</a>
+
     <header>
         <p>Rueda Libre</p>
-        <img src="../img/portada.jpeg" alt="Frente de la tienda Rueda Libre con bicicletas urbanas en Medellín" width="700">
+        <img src="../img/portada.jpeg" alt="" width="700">
         <nav aria-label="Principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="tarifas.html" aria-current="page">Tarifas</a></li>
                 <li><a href="reservas.html">Reservas</a></li>
             </ul>
         </nav>
     </header>
- 
-    <main>
-        <h1>
-            Nuestra tabla de precios
-        </h1>
- 
+
+    <main id="contenido">
+        <h1>Nuestra tabla de precios</h1>
+
         <section aria-labelledby="titulo-precios">
+            <h2 id="titulo-precios">Precios de alquiler</h2>
             <table border="1">
-                <caption id="titulo-precios">Tabla de precios de alquiler</caption>
+                <caption>Tabla de precios de alquiler</caption>
                 <thead>
                     <tr>
                         <th scope="col">Tipo de bicicleta</th>
@@ -57,14 +58,15 @@
                 </tbody>
             </table>
         </section>
- 
+
         <aside>
-            <p>Nota: Los precios incluyen casco y candado.No olviden llevar hidratación | Todos los recorridos salen los sabados a las 8:00 AM. <a href="reservas.html">Reserva Ahora !!!!</a></p>
+            <p>Nota: Los precios incluyen casco y candado.No olviden llevar hidratación | Todos los recorridos salen los sabados a las 8:00 AM. <a href="reservas.html">Reservar una bicicleta</a></p>
         </aside>
- 
+
         <section aria-labelledby="titulo-recorridos">
+            <h2 id="titulo-recorridos">Recorridos</h2>
             <table border="1">
-                <caption id="titulo-recorridos">Tabla de información de los recorridos</caption>
+                <caption>Tabla de información de los recorridos</caption>
                 <thead>
                     <tr>
                         <th scope="col">Recorrido</th>
@@ -98,13 +100,13 @@
                     </tr>
                 </tbody>
             </table>
-            <p>Nota: Los precios pueden variar según la temporada y la disponibilidad de bicicletas. <a href="reservas.html">Reserva Ahora !!!!</a></p>
+            <p>Nota: Los precios pueden variar según la temporada y la disponibilidad de bicicletas. <a href="reservas.html">Reservar una bicicleta</a></p>
         </section>
     </main>
- 
+
     <footer>
         <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
-        <a href="mailto:info@ruedalibre.com">Contacto</a>
+        <a href="mailto:info@ruedalibre.com">Contacto por correo</a>
     </footer>
 </body>
 </html>

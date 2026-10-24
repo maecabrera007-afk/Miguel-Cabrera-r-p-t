@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
-  <link rel="icon" type="image/png" href="proyecto/img/favicon.png">
- 
+    <title>Reservas | Rueda Libre</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+
 </head>
 <body>
+    <a href="#contenido">Saltar al contenido principal</a>
+
     <header>
-        <h1> Rueda Libre | Alquiler de bicicletas en Medellín </h1>
-        <p>Alquiler de bicicletas en Medellín , No perdamos tiempor <a href="index.html"> Encuéntranos!!!</a></p>
-        <img src="../img/portada.jpeg" alt="Frente de la tienda Rueda Libre con bicicletas urbanas en Medellín" width="700">
+        <p>Rueda Libre</p>
+        <p>Alquiler de bicicletas en Medellín , No perdamos tiempor <a href="index.html#Encuéntranos">Encuéntranos</a></p>
+        <img src="../img/portada.jpeg" alt="" width="700">
         <nav aria-label="Principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="tarifas.html">Tarifas</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="reservas.html" aria-current="page">Reservas</a></li>
             </ul>
         </nav>
     </header>
- 
-    <main>
+
+    <main id="contenido">
         <section>
             <h1> Reservas de bicicletas </h1>
-            <p> En esta sección puedes realizar tu reserva de bicicletas para disfrutar de nuestros recorridos en Medellín.<a href="mailto:info@ruedalibre.com">Reserva Ahora !!!!</a> </p>
+            <p> En esta sección puedes realizar tu reserva de bicicletas para disfrutar de nuestros recorridos en Medellín.<a href="mailto:info@ruedalibre.com">Reservar por correo electrónico</a> </p>
         </section>
- 
+
         <aside>
             <h2> Horarios de atención </h2>
             <dl>
@@ -39,17 +41,23 @@
             </dl>
         </aside>
 
-        <form action="#" method="post">
+        <section>
+            <h2>Formulario de reserva</h2>
 
-        <fieldset>
-            <legend>Tus datos</legend>
+            <form action="#" method="post">
 
-            <p>
-                <label for="nombre"> Nombre completo </label>
-                <input type="text" id="nombre" name="nombre" autocomplete="name" required minlength="3">
-            </p>
+                <p>Todos los campos son obligatorios, excepto los comentarios.</p>
 
-                                <p>
+                <fieldset>
+                    <legend>Tus datos</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name"
+                               required minlength="3">
+                    </p>
+
+                    <p>
                         <label for="documento">Número de documento</label>
                         <input type="text" id="documento" name="documento" inputmode="numeric"
                                required minlength="6" maxlength="10"
@@ -58,7 +66,7 @@
                                aria-describedby="ayuda-documento">
                         <small id="ayuda-documento">Solo números, de 6 a 10 dígitos.</small>
                     </p>
- 
+
                     <p>
                         <label for="correo">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" autocomplete="email"
@@ -66,7 +74,7 @@
                                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                                title="Escribe un correo válido, por ejemplo: nombre@correo.com">
                     </p>
- 
+
                     <p>
                         <label for="celular">Celular</label>
                         <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric"
@@ -77,10 +85,10 @@
                         <small id="ayuda-celular">10 dígitos, empieza por 3.</small>
                     </p>
                 </fieldset>
- 
+
                 <fieldset>
                     <legend>Tu alquiler</legend>
- 
+
                     <p>
                         <label for="fecha">Fecha del alquiler</label>
                         <input type="date" id="fecha" name="fecha"
@@ -88,10 +96,10 @@
                                aria-describedby="ayuda-fecha">
                         <small id="ayuda-fecha">Entre el 1 de noviembre y el 31 de diciembre de 2026.</small>
                     </p>
- 
+
                     <fieldset>
                         <legend>Tipo de bicicleta</legend>
- 
+
                         <p>
                             <input type="radio" id="tipo-urbana" name="tipo_bicicleta" value="Urbana" required>
                             <label for="tipo-urbana">Urbana</label>
@@ -105,7 +113,7 @@
                             <label for="tipo-pista">Pista</label>
                         </p>
                     </fieldset>
- 
+
                     <p>
                         <label for="plan">Plan de alquiler</label>
                         <select id="plan" name="plan" required>
@@ -115,7 +123,7 @@
                             <option value="dia_completo">Día completo</option>
                         </select>
                     </p>
- 
+
                     <p>
                         <label for="cantidad">Cantidad de bicicletas</label>
                         <input type="number" id="cantidad" name="cantidad"
@@ -124,31 +132,32 @@
                         <small id="ayuda-cantidad">De 1 a 6 bicicletas.</small>
                     </p>
                 </fieldset>
- 
+
                 <fieldset>
                     <legend>Confirmación</legend>
- 
+
                     <p>
                         <label for="comentarios">Comentarios adicionales (opcional)</label>
                         <textarea id="comentarios" name="comentarios" rows="4" cols="40"
                                   maxlength="300" aria-describedby="ayuda-comentarios"></textarea>
                         <small id="ayuda-comentarios">Máximo 300 caracteres.</small>
                     </p>
- 
+
                     <p>
                         <input type="checkbox" id="acepta-politicas" name="acepta_politicas" value="si" required>
                         <label for="acepta-politicas">Acepto las políticas de alquiler</label>
                     </p>
                 </fieldset>
- 
+
                 <button type="submit">Enviar reserva</button>
 
-        </form>
+            </form>
+        </section>
     </main>
 
-    <footer> 
+    <footer>
         <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
-        <a href="mailto:info@ruedalibre.com">Contacto</a>
+        <a href="mailto:info@ruedalibre.com">Contacto por correo</a>
     </footer>
-</body>26
-</html>26
+</body>
+</html>

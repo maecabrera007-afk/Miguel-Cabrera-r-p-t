@@ -105,3 +105,44 @@ Aceptar el contrato con checkbox. Es una decisión de sí o no, y con la casilla
 | Fecha | 31/10/2026 | No se envía, porque es anterior al 1 de noviembre de 2026 | No se envió. El navegador indicó que la fecha debe ser el 1 de noviembre de 2026 o posterior |
 | Cantidad | 7 | No se envía, porque el máximo es 6 nisiquiera se puede poner| No se envió. El navegador indicó que el valor debe ser 6 o menor |
 | Políticas | Casilla sin marcar | No se envía, porque es obligatorio aceptarlas | No se envió. El navegador pidió marcar la casilla |
+
+
+## Auditoría de accesibilidad
+
+| Hallazgo | Corrección |
+|---|---|
+| reservas tenía dos h1 | El del encabezado pasó a párrafo; queda un h1 por página |
+| Los alt decían "Imagen de..." | Quité esas palabras |
+| La portada se repetía con el mismo alt en las 3 páginas | Se describe en inicio; en tarifas y reservas lleva alt vacío (decorativa) |
+| Tres enlaces decían solo "ruta" | Ahora dicen "ruta urbana", "ruta de montaña" y "ruta de pista" |
+| Los enlaces "Reserva Ahora !!!!" no eran claros | Ahora dicen "Reservar una bicicleta" |
+| "Encuéntranos" llevaba a la misma página | Ahora lleva a la sección de ubicación |
+| Para llegar al contenido había que pasar por todo el menú | Agregué un enlace "Saltar al contenido principal" |
+
+
+## Contraste
+
+| Texto sobre fondo | Razón | Resultado |
+|---|---|---|
+| Blanco sobre Verde Ruta | 5.31:1 | Apta |
+| Blanco sobre Naranja Pedal | 2.22:1 | No apta |
+| Azul Noche sobre Naranja Pedal | 7.20:1 | Apta |
+| Azul Noche sobre Crema | 14.83:1 | Apta |
+| Gris Asfalto sobre Crema | 5.57:1 | Apta |
+| Verde Ruta sobre Crema | 4.93:1 | Apta |
+| Naranja Pedal sobre Crema | 2.06:1 | No apta |
+| Blanco sobre Azul Noche | 15.97:1 | Apta |
+
+## Mapa de uso de color
+
+- Fondo general: Crema
+- Texto y títulos: Azul Noche
+- Texto secundario: Gris Asfalto
+- Botón principal: fondo Verde Ruta con texto blanco
+- Botón secundario: fondo Naranja Pedal con texto Azul Noche
+- Enlaces: Verde Ruta, subrayados
+- Naranja Pedal nunca se usa como texto sobre Crema ni con texto blanco encima
+
+## Publicación
+
+URL del sitio: (pegar aquí)

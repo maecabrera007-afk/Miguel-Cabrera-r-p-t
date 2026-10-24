@@ -81,8 +81,8 @@ Las tres páginas están en la misma carpeta, por eso la ruta es solo el nombre 
 
 | Archivo de origen | Recurso | Ruta escrita | Ubicación real |
 |---|---|---|---|
-| index.html, tarifas.html, reservas.html | Favicon | ../img/favicon.png | proyecto/img/favicon.png |
-| index.html, tarifas.html, reservas.html | Portada | ../img/portada.jpeg | proyecto/img/portada.jpeg |
+| index.html, tarifas.html, reservas.html | Favicon | img/favicon.png | proyecto/img/favicon.png |
+| index.html, tarifas.html, reservas.html | Portada | img/portada.jpeg | proyecto/img/portada.jpeg |
 
 
 #Justificacion formulario

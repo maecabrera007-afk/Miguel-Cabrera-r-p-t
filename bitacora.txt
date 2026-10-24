@@ -146,3 +146,20 @@ Aceptar el contrato con checkbox. Es una decisión de sí o no, y con la casilla
 ## Publicación
 
 URL del sitio: https://maecabrera007-afk.github.io/Rueda_libre_Miguel_Turing/
+
+
+## Navegación, enlaces y estados
+
+Conflicto: la clase .activo no funcionaba porque #menu a pesa más. #menu a vale (1, 0, 1) y .activo vale (0, 1, 0). Un id gana sobre cualquier clase, así que el enlace activo seguía en gris.
+
+Solución: escribí la regla como #menu a.activo, que vale (1, 1, 1) y gana.
+
+Orden: la regla de :hover y :focus del menú vale lo mismo que #menu a.activo, así que la puse después.
+
+Estados:
+- Menú: gris normal, verde y en negrita el de la página actual, y blanco sobre verde al pasar el mouse o al enfocar.
+- Botones y enlaces "Reservar": blanco sobre verde, y blanco sobre azul oscuro al pasar el mouse o al enfocar.
+- Campos del formulario: contorno gris al pasar el mouse y contorno grueso azul oscuro al enfocar.
+- Todos los colores de texto cumplen 4.5:1 de contraste.
+
+Con Tab: en las tres páginas siempre se ve dónde está el foco.

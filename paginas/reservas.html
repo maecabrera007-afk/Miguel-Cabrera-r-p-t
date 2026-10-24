@@ -46,89 +46,102 @@
 
             <p>
                 <label for="nombre"> Nombre completo </label>
-                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required minlength="3">
             </p>
 
-            <p>
-                <label for="correo">Correo electrónico </label>
-                <input type="email" id="correo" name="correo" autocomplete="email" required>
-            </p>
-            
-            <p>
-                <label for="celular">Celular</label>
-                <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric" maxlength="10" required>
-            </p>
+                                <p>
+                        <label for="documento">Número de documento</label>
+                        <input type="text" id="documento" name="documento" inputmode="numeric"
+                               required minlength="6" maxlength="10"
+                               pattern="[0-9]{6,10}"
+                               title="Solo números, entre 6 y 10 dígitos (por ejemplo: 1037456789)."
+                               aria-describedby="ayuda-documento">
+                        <small id="ayuda-documento">Solo números, de 6 a 10 dígitos.</small>
+                    </p>
  
-            <p>
-                <label for="documento">Número de documento</label>
-                <input type="text" id="documento" name="documento" inputmode="numeric" required>
-            </p>
-
-
-        </fieldset>
-
-        <fieldset>
-                    
-            <legend>Tu alquiler</legend>
+                    <p>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email"
+                               required
+                               pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                               title="Escribe un correo válido, por ejemplo: nombre@correo.com">
+                    </p>
+ 
+                    <p>
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric"
+                               required minlength="10" maxlength="10"
+                               pattern="3[0-9]{9}"
+                               title="10 dígitos y debe empezar por 3 (por ejemplo: 3001234567)."
+                               aria-describedby="ayuda-celular">
+                        <small id="ayuda-celular">10 dígitos, empieza por 3.</small>
+                    </p>
+                </fieldset>
  
                 <fieldset>
-                        
-                    <legend>Tipo de bicicleta</legend>
+                    <legend>Tu alquiler</legend>
+ 
+                    <p>
+                        <label for="fecha">Fecha del alquiler</label>
+                        <input type="date" id="fecha" name="fecha"
+                               required min="2026-11-01" max="2026-12-31"
+                               aria-describedby="ayuda-fecha">
+                        <small id="ayuda-fecha">Entre el 1 de noviembre y el 31 de diciembre de 2026.</small>
+                    </p>
+ 
+                    <fieldset>
+                        <legend>Tipo de bicicleta</legend>
  
                         <p>
                             <input type="radio" id="tipo-urbana" name="tipo_bicicleta" value="Urbana" required>
                             <label for="tipo-urbana">Urbana</label>
                         </p>
-                        
                         <p>
                             <input type="radio" id="tipo-montana" name="tipo_bicicleta" value="Montaña">
                             <label for="tipo-montana">Montaña</label>
                         </p>
-                        
                         <p>
                             <input type="radio" id="tipo-pista" name="tipo_bicicleta" value="Pista">
                             <label for="tipo-pista">Pista</label>
                         </p>
-                
+                    </fieldset>
+ 
+                    <p>
+                        <label for="plan">Plan de alquiler</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">Seleccione un plan</option>
+                            <option value="1_hora">1 hora</option>
+                            <option value="medio_dia">Medio día (4 h)</option>
+                            <option value="dia_completo">Día completo</option>
+                        </select>
+                    </p>
+ 
+                    <p>
+                        <label for="cantidad">Cantidad de bicicletas</label>
+                        <input type="number" id="cantidad" name="cantidad"
+                               required min="1" max="6" step="1"
+                               aria-describedby="ayuda-cantidad">
+                        <small id="ayuda-cantidad">De 1 a 6 bicicletas.</small>
+                    </p>
                 </fieldset>
-
-                        <p>
-                            <label for="duracion">Duración del alquiler</label>
-                                <select id="duracion" name="duracion" required>
-                                    <option value="">Seleccione una duración</option>
-                                    <option value="1_hora">1 hora</option>
-                                    <option value="medio_dia">Medio día (4 h)</option>
-                                    <option value="dia_completo">Día completo</option>
-                                </select>
-                        </p>
- 
-                        <p>
-                            <label for="fecha">Fecha del alquiler</label>
-                            <input type="date" id="fecha" name="fecha" required>
-                        </p>
- 
-                        <p>
-                            <label for="cantidad">Cantidad de bicicletas</label>
-                            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
-                        </p>
-                
-        </fieldset>
  
                 <fieldset>
                     <legend>Confirmación</legend>
  
                     <p>
-                        <label for="comentarios">Comentarios adicionales</label>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+                        <label for="comentarios">Comentarios adicionales (opcional)</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40"
+                                  maxlength="300" aria-describedby="ayuda-comentarios"></textarea>
+                        <small id="ayuda-comentarios">Máximo 300 caracteres.</small>
                     </p>
  
                     <p>
-                        <input type="checkbox" id="acepta-terminos" name="acepta_terminos" value="si" required>
-                        <label for="acepta-terminos">Acepto las condiciones del contrato de alquiler</label>
+                        <input type="checkbox" id="acepta-politicas" name="acepta_politicas" value="si" required>
+                        <label for="acepta-politicas">Acepto las políticas de alquiler</label>
                     </p>
                 </fieldset>
  
-                <button type="submit"> Enviar reserva</button>
+                <button type="submit">Enviar reserva</button>
 
         </form>
     </main>

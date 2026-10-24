@@ -94,3 +94,14 @@ En el celular abre el teclado numérico y no valida el formato como correo o nú
 
 Aceptar el contrato con checkbox. Es una decisión de sí o no, y con la casilla marcada se envía acepta_terminos=si. Si no se marca, no se envía nada y required impide enviar el formulario.
 
+
+| Campo | Dato de prueba | Resultado esperado | Resultado obtenido |
+|---|---|---|---|
+| Documento | 12345 | No se envía, porque tiene menos de 6 dígitos | No se envió. El navegador pidió respetar el formato: solo números, entre 6 y 10 dígitos |
+| Documento | ABC12345 | No se envía, porque tiene letras | No se envió. El navegador pidió respetar el formato: solo números, entre 6 y 10 dígitos |
+| Correo | maecabrera.correo.com | No se envía, porque no tiene @ | No se envió. El navegador pidió escribir un correo válido |
+| Celular | 1234567890 | No se envía, porque no empieza por 3 | No se envió. El navegador pidió 10 dígitos que empiecen por 3 |
+| Celular | 300123 | No se envía, porque tiene menos de 10 dígitos | No se envió. El navegador pidió 10 dígitos que empiecen por 3 |
+| Fecha | 31/10/2026 | No se envía, porque es anterior al 1 de noviembre de 2026 | No se envió. El navegador indicó que la fecha debe ser el 1 de noviembre de 2026 o posterior |
+| Cantidad | 7 | No se envía, porque el máximo es 6 nisiquiera se puede poner| No se envió. El navegador indicó que el valor debe ser 6 o menor |
+| Políticas | Casilla sin marcar | No se envía, porque es obligatorio aceptarlas | No se envió. El navegador pidió marcar la casilla |

@@ -145,4 +145,4 @@ Aceptar el contrato con checkbox. Es una decisión de sí o no, y con la casilla
 
 ## Publicación
 
-URL del sitio: (pegar aquí)
+URL del sitio: https://maecabrera007-afk.github.io/Rueda_libre_Miguel_Turing/

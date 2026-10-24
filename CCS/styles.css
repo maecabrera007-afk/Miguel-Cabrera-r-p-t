@@ -1,0 +1,95 @@
+
+:root {
+
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+    --blanco: #FFFFFF;
+
+   
+    --fuente-titulos: "Montserrat", "Arial Black", Arial, sans-serif;
+    --fuente-texto: "Open Sans", Arial, Helvetica, sans-serif;
+
+
+    --espacio-s: 0.5rem;
+    --espacio-m: 1rem;
+    --espacio-l: 2rem;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--fuente-texto);
+    color: var(--azul-noche);
+    background-color: var(--crema);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
+
+strong, th {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header {
+    padding: var(--espacio-m) var(--espacio-l);
+    color: var(--blanco);
+    background-color: var(--azul-noche);
+    border-bottom: var(--espacio-s) solid var(--naranja-pedal);
+}
+
+main,
+footer {
+    padding: var(--espacio-m) var(--espacio-l);
+}
+
+footer,
+small {
+    color: var(--gris-asfalto);
+}
+
+/* ===== Enlaces y botones ===== */
+a {
+    color: var(--verde-ruta);
+    text-decoration: underline;
+}
+
+header a {
+    color: var(--blanco);
+}
+
+button {
+    padding: var(--espacio-s) var(--espacio-m);
+    color: var(--blanco);
+    background-color: var(--verde-ruta);
+    border: none;
+    cursor: pointer;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+/* ===== Foco visible con teclado ===== */
+:focus-visible {
+    outline: 0.1875rem solid var(--azul-noche);
+    outline-offset: 0.125rem;
+}
+
+header :focus-visible {
+    outline-color: var(--naranja-pedal);
+}
